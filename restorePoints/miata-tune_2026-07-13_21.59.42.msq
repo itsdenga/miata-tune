@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Ultra 3.3.01 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: Project close - &#10;" writeDate="Mon Jul 13 22:19:15 EEST 2026"/>
+<bibliography author="TunerStudio MS Ultra 3.3.01 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: Save before loading miata-tune_2026-07-10_21.06.47.msq from a Difference report. - &lt;br&gt;Restore Point: Project close - &lt;br&gt;Restore Point: Project close - &#10;" writeDate="Mon Jul 13 21:59:42 EEST 2026"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS3+1.6.1+release++++++20241111+11%3A05GMT+%28c%29+JSM%2FKC+*******" nPages="21" signature="MS3 Format 0592.13P"/>
 <page>
 <pcVariable name="tsCanId">"CAN ID 0"</pcVariable>
@@ -408,8 +408,8 @@
 <constant digits="0" name="pwmidle_close_delay" units="s">3.0</constant>
 <constant digits="1" name="pwmidle_open_duty" units="%">79.968</constant>
 <constant digits="0" name="pwmidle_open_steps" units="steps">204.0</constant>
-<constant digits="1" name="pwmidle_closed_duty" units="%">23.128</constant>
-<constant digits="0" name="pwmidle_closed_steps" units="steps">59.0</constant>
+<constant digits="1" name="pwmidle_closed_duty" units="%">10.192</constant>
+<constant digits="0" name="pwmidle_closed_steps" units="steps">26.0</constant>
 <constant digits="0" name="pwmidle_pid_wait_timer" units="s">1.0</constant>
 <constant name="pwmidle_freq_pin3">"Off"</constant>
 <constant name="pwmidle_freq_koeo">"On"</constant>
@@ -481,10 +481,10 @@
 <constant digits="0" name="fuelcut_fuelon_lower_rpmdot" units="rpmdot">100.0</constant>
 <constant digits="3" name="staged_secondary_enrichment" units="ms">0.0</constant>
 <constant digits="0" name="staged_primary_delay" units="ign events">0.0</constant>
-<constant name="idleadvance_on">"Off"</constant>
+<constant name="idleadvance_on">"On"</constant>
 <constant name="idleve_on">"Off"</constant>
 <constant name="idleadv_vsson">"Off"</constant>
-<constant name="idle_special_ops_timing_assist">"Off"</constant>
+<constant name="idle_special_ops_timing_assist">"On"</constant>
 <constant digits="1" name="idleadvance_clt" units="°C">-17.776</constant>
 <constant digits="0" name="idleadvance_delay" units="s">0.0</constant>
 <constant cols="1" digits="1" name="idleadvance_curve" rows="4" units="deg">
@@ -1106,7 +1106,7 @@
 <constant digits="0" name="testinjPwmPd" units="us">66.0</constant>
 <constant digits="0" name="testinjPwmP" units="%">30.0</constant>
 <constant name="testsel_inj">"InjD"</constant>
-<constant name="testsel_coil">"CoilD"</constant>
+<constant name="testsel_coil">"CoilB"</constant>
 <constant digits="0" name="dbgtooth" units="tooth">0.0</constant>
 <constant digits="0" name="iacpostest" units="steps">30.0</constant>
 <constant digits="0" name="iachometest" units="steps">160.0</constant>
@@ -3759,22 +3759,22 @@
 </page>
 <page number="6" size="1024">
 <constant cols="16" digits="1" name="veTable1" rows="16" units="%">
-         52.8 52.8 52.8 47.8 46.2 44.3 45.2 46.9 48.6 51.4 53.9 54.2 54.1 53.2 52.1 47.8 
-         53.8 53.9 54.0 56.4 60.4 61.7 62.3 52.1 61.8 74.3 76.0 79.2 76.6 74.0 73.0 71.4 
-         55.7 55.8 60.0 62.4 67.1 63.6 69.6 61.2 64.3 76.8 79.6 76.7 75.6 74.3 73.9 73.2 
-         58.0 58.7 62.4 64.8 71.8 71.3 72.7 64.9 68.8 83.5 85.6 79.7 78.1 76.7 76.1 75.1 
-         60.8 61.8 64.0 69.8 73.0 74.4 77.8 70.9 75.6 85.6 86.8 83.2 81.1 79.0 78.1 76.9 
-         63.6 64.9 68.8 71.5 77.8 78.7 79.4 70.3 77.9 87.4 88.0 83.9 82.2 80.4 79.7 78.7 
-         66.4 68.5 71.8 75.0 79.4 82.2 82.9 76.9 81.7 89.3 89.3 86.0 84.2 82.3 81.6 80.5 
-         74.8 76.2 75.8 79.0 84.8 85.1 85.0 81.4 85.3 94.2 93.7 91.3 88.9 86.5 85.6 84.1 
-         76.1 79.0 82.3 85.6 89.4 87.7 86.9 84.7 92.3 98.0 97.3 96.6 93.7 90.6 89.5 87.7 
-         80.3 82.2 85.2 86.5 90.1 93.7 88.9 88.9 98.4 102.2 100.7 98.5 96.1 93.8 92.9 91.4 
-         83.0 85.3 88.1 88.9 91.4 94.0 89.9 95.0 103.1 104.3 103.0 101.9 101.0 100.1 99.7 99.2 
-         85.8 88.6 89.9 91.0 94.1 97.1 94.7 97.7 105.8 105.0 105.6 104.6 103.9 103.1 102.8 102.4 
-         90.5 93.4 94.9 95.9 99.4 102.5 99.8 103.1 111.6 110.9 111.4 110.4 109.6 108.7 108.5 108.0 
-         95.2 98.4 99.8 101.0 104.5 107.8 105.0 108.5 117.5 116.6 117.2 116.0 115.4 114.5 114.1 113.8 
-         99.8 103.2 104.8 106.0 109.7 113.2 110.3 113.8 123.2 122.3 123.0 121.9 121.1 120.1 119.6 119.3 
-         104.6 108.0 109.7 111.0 114.8 118.4 115.4 119.2 129.1 128.2 128.8 127.6 126.7 125.8 125.4 124.9 
+         70.0 70.4 70.8 51.4 51.0 37.7 37.2 39.1 40.5 42.8 44.9 45.2 45.1 44.3 43.4 39.8 
+         71.2 70.8 72.2 70.3 51.4 51.5 51.6 43.4 51.5 61.9 63.3 66.0 63.8 61.7 60.8 59.5 
+         70.5 63.4 64.1 71.6 53.3 53.0 58.0 54.6 53.6 64.0 66.3 63.9 63.0 61.9 61.6 61.0 
+         73.6 64.6 64.9 69.7 51.7 59.4 61.7 55.7 57.3 69.6 71.3 66.4 65.1 63.9 63.4 62.6 
+         70.0 62.4 63.5 70.0 50.1 62.0 65.7 59.9 63.0 71.3 72.3 69.3 67.6 65.8 65.1 64.1 
+         70.0 70.0 70.9 70.1 50.0 65.9 66.6 58.6 64.9 72.8 73.3 69.9 68.5 67.0 66.4 65.6 
+         65.0 65.2 65.0 75.4 50.3 68.9 69.1 64.1 68.1 74.4 74.4 71.7 70.2 68.6 68.0 67.1 
+         70.0 69.9 69.9 70.5 51.1 71.7 70.8 67.8 71.1 78.5 78.1 76.1 74.1 72.1 71.3 70.1 
+         70.0 70.3 71.5 70.7 51.7 73.1 72.4 70.6 76.9 81.7 81.1 80.5 78.1 75.5 74.6 73.1 
+         75.0 70.3 71.5 72.1 75.1 78.1 74.1 74.1 82.0 85.2 83.9 82.1 80.1 78.2 77.4 76.2 
+         75.0 72.3 75.8 75.2 76.2 78.3 74.9 79.2 85.9 86.9 85.8 84.9 84.2 83.4 83.1 82.7 
+         75.0 73.9 76.0 76.3 78.4 80.9 78.9 81.4 88.2 87.5 88.0 87.2 86.6 85.9 85.7 85.3 
+         75.4 77.8 79.1 79.9 82.8 85.4 83.2 85.9 93.0 92.4 92.8 92.0 91.3 90.6 90.4 90.0 
+         79.3 82.0 83.2 84.2 87.1 89.8 87.5 90.4 97.9 97.2 97.7 96.7 96.2 95.4 95.1 94.8 
+         83.2 86.0 87.3 88.3 91.4 94.3 91.9 94.8 102.7 101.9 102.5 101.6 100.9 100.1 99.7 99.4 
+         87.2 90.0 91.4 92.5 95.7 98.7 96.2 99.3 107.6 106.8 107.3 106.3 105.6 104.8 104.5 104.1 
       </constant>
 <constant cols="16" digits="1" name="veTable2" rows="16" units="%">
          26.0 26.0 29.0 34.0 40.0 46.0 50.0 55.0 58.0 61.0 61.0 60.0 59.0 59.0 58.0 58.0 
@@ -4457,18 +4457,18 @@
          59.994 
       </constant>
 <constant cols="5" digits="1" name="pwmidle_cl_initialvalues_duties" rows="5" units="%">
-         34.888 39.592 45.472 50.176 54.488 
-         34.888 39.592 45.472 50.176 54.488 
-         34.888 39.592 45.472 50.176 54.488 
-         34.888 39.592 45.472 50.176 54.488 
-         34.888 39.592 45.472 50.176 54.488 
+         18.424 23.128 29.008 33.712 38.024 
+         18.424 23.128 29.008 33.712 38.024 
+         18.424 23.128 29.008 33.712 38.024 
+         18.424 23.128 29.008 33.712 38.024 
+         18.424 23.128 29.008 33.712 38.024 
       </constant>
 <constant cols="5" digits="0" name="pwmidle_cl_initialvalues_steps" rows="5" units="steps">
-         89.0 101.0 116.0 128.0 139.0 
-         89.0 101.0 116.0 128.0 139.0 
-         89.0 101.0 116.0 128.0 139.0 
-         89.0 101.0 116.0 128.0 139.0 
-         89.0 101.0 116.0 128.0 139.0 
+         47.0 59.0 74.0 86.0 97.0 
+         47.0 59.0 74.0 86.0 97.0 
+         47.0 59.0 74.0 86.0 97.0 
+         47.0 59.0 74.0 86.0 97.0 
+         47.0 59.0 74.0 86.0 97.0 
       </constant>
 <constant cols="1" digits="0" name="knock_clts" rows="4" units="°C">
          4.444 
@@ -6270,9 +6270,7 @@
          16432.0 
          16434.0 
          16438.0 
-         16446.0 
          16450.0 
-         8263.0 
          8270.0 
          8271.0 
          8272.0 
@@ -6290,6 +6288,8 @@
          8638.0 
          8639.0 
          16860.0 
+         0.0 
+         0.0 
          0.0 
          0.0 
          0.0 
